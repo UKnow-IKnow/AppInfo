@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.pushResponse.observe(this,{
             response ->
-            binding.resultTv.text = response.body().toString()
+            binding.resultTv.text = response.toString()
         })
     }
 }

@@ -9,7 +9,7 @@ import retrofit2.http.POST
 interface Api {
 
     @FormUrlEncoded
-    @POST("status")
+    @POST("/status")
     suspend fun pushStatus(
         @Field("deviceId") deviceId: String,
         @Field("internetCon") internetCon: Boolean,
